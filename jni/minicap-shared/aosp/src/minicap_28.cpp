@@ -278,7 +278,9 @@ private:
     t.setDisplaySurface(mVirtualDisplay, mBufferProducer);
     t.setDisplayProjection(mVirtualDisplay,
       android::DISPLAY_ORIENTATION_0, layerStackRect, visibleRect);
-    t.setDisplayLayerStack(mVirtualDisplay, 0); // default stack
+    
+    MCINFO("Test mDisplayId: " + mDisplayId);
+    t.setDisplayLayerStack(mVirtualDisplay, mDisplayId); // default stack
     t.apply();
 
     mHaveRunningDisplay = true;

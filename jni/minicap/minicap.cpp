@@ -339,6 +339,7 @@ main(int argc, char* argv[]) {
 
   std::cerr << "PID: " << getpid() << std::endl;
   std::cerr << "INFO: Using projection " << proj << std::endl;
+  std::cerr << "Test success" << std::endl;
 
   // Disable STDOUT buffering.
   setbuf(stdout, NULL);

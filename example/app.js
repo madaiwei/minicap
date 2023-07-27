@@ -5,7 +5,7 @@ var WebSocketServer = require('ws').Server
   , net = require('net')
   , app = express()
 
-var PORT = process.env.PORT || 9002
+var PORT = process.env.PORT || 9003
 
 app.use(express.static(path.join(__dirname, '/public')))
 
